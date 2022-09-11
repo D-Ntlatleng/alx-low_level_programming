@@ -14,9 +14,11 @@ int main(void)
 	int c;
 	int d;
 	int n;
+	int count;
 
 	d = 1;
 	n = 0;
+	count = 1;
 	for (a = 0; a < 10; a++)
 	{
 		for (b = 0 ; b < 9; b++)
@@ -30,7 +32,7 @@ int main(void)
 					putchar(32);
 					putchar(c + 48);
 					putchar(d + 48);
-					if (n < 8998)
+					if (n < 8144)
 					{
 						putchar(',');
 						putchar(32);
@@ -39,6 +41,11 @@ int main(void)
 
 				}
 				d = 0;
+			}
+			if (c > 9)
+			{
+				count++;
+				d = count;
 			}
 		}
 	}
