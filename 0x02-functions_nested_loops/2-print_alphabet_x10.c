@@ -1,28 +1,23 @@
 #include "main.h"
-
 /**
  * print_alphabet_x10 - Entry point
  *
  * Description: 'the program's description'
  *
- * Return: void 
+ * Return: void
  */
-
-void my_print(void)
-{
-        int i;
-        char str[] = "abcdefghijklmnopqrstuvwxyz";
-
-        i = 0;
-        while (str[i])
-                _putchar(str[i++]);
-        _putchar(10);
-}
 
 void print_alphabet_x10(void)
 {
 	int i;
+	int j;
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (i = 0; i < 10; i++)
-		my_print();
+	{
+		j = 0;
+		while (str[j])
+			_putchar(str[j++]);
+		_putchar(10);
+	}
 }
