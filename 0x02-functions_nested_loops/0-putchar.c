@@ -2,17 +2,17 @@
 #include "main.h"
 
 /**
- * main- writes the character c to stdout
- * @c: The character to print
+ * main - Entry point
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: 'the program's description'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char str[] = "_putchar";
 	int i;
+	char str[] = "_putchar";
 
 	i = 0;
 	while (str[i])
