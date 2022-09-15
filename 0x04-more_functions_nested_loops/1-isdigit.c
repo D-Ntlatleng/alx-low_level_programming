@@ -1,9 +1,8 @@
 /**
- * op_add - Makes the sum of two numbers
- * @arg1: First operand
- * @arg2: Second operand
+ * _isdigit - check input is digit
+ * @c: First operand
  *
- * Return: The sum of the two parameters
+ * Return: 1 or 0
  */
 
 int _isdigit(int c)
