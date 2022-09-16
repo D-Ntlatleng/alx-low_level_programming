@@ -19,4 +19,5 @@ int _abs(int);
 int add(int, int);
 void times_table(void);
 void print_numbers(void);
+void print_most_numbers(void);
 #endif /* MAIN_H */
