@@ -11,13 +11,6 @@ void print_number(int n)
 {
 	char *s;
 
-	if (n == INT_MAX)
-	{
-		s = "2147483647";
-		while (*s)
-			_putchar(*s++);
-		return;
-	}
 	if (n == INT_MIN)
 	{
 		s = "-2147483648";
