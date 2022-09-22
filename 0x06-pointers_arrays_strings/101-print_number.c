@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <limits.h>
 /**
  * print_number - print out number
  * @n: integer to print
@@ -9,6 +9,15 @@
 
 void print_number(int n)
 {
+	char *s;
+
+	if (n == INT_MIN)
+	{
+		s = "-2147483648";
+		while (*s)
+			_putchar(*s++);
+		return;
+	}
 	if (n < 0)
 	{
 		_putchar('-');
