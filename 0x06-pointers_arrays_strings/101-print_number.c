@@ -9,15 +9,12 @@
 
 void print_number(int n)
 {
-	long i;
-
-	i = (long)n;
-	if (i < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		i *= -1;
+		n *= -1;
 	}
-	if (i > 10)
-		print_number(i / 10);
-	_putchar(i % 10 + 48);
+	if (n > 10)
+		print_number(n / 10);
+	_putchar(n % 10 + 48);
 }
