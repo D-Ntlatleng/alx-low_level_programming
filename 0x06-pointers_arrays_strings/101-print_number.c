@@ -9,21 +9,16 @@
 
 void print_number(int n)
 {
-	char *s;
+	unsigned int i;
 
-	if (n == INT_MIN)
-	{
-		s = "-2147483648";
-		while (*s)
-			_putchar(*s++);
-		return;
-	}
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		i = n * -1;
 	}
-	if (n > 10)
-		print_number(n / 10);
-	_putchar(n % 10 + 48);
+	else
+		i = n;
+	if (i > 10)
+		print_number(i / 10);
+	_putchar(i % 10 + 48);
 }
