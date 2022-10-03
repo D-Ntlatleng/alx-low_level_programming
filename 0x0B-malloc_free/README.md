@@ -1,0 +1,1 @@
+dynamtic memory allocation
