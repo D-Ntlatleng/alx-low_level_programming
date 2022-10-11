@@ -1,0 +1,1 @@
+fucntions-like macros
