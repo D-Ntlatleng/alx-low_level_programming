@@ -1,4 +1,6 @@
 #include "function_pointers.h"
+#include <string.h>
+
 /**
  * print_name - call function to print name
  * @name: name to print
@@ -8,7 +10,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name)
+	if (name && strcmp(name, ""))
 	{
 		f(name);
 	}
